@@ -16,7 +16,7 @@ private
       @category_title = "Brick and Mortar"
       @category_description = "Find the best ways to build a website for your brick and mortar business.  Great for restaurant, doctor's pratices, etc"
     when "portfolios"
-      @category_title = "Brick and Mortar"
+      @category_title = "Portfolios"
       @category_description = "Find the best ways to build a website for your portfolio.  Great for artists, designers, musicians, etc."
     when "mobile"
       @category_title = "Mobile apps and websites"
