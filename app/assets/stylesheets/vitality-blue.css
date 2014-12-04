@@ -3,7 +3,7 @@ html,body{height:100%}.img-centered{margin:0 auto}.content-row{margin-top:30px}s
 
 .demo-header {
   text-align: center;
-  background: url('/assets/bg-header.jpg') no-repeat center center scroll;
+  background: url("bg-header.jpg") no-repeat center center scroll;
   color: #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
