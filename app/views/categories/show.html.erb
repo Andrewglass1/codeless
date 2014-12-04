@@ -1,0 +1,50 @@
+<div class="masthead">
+  <h3>Build Without Code</h3>
+</div>
+
+<div class="category-container">
+  <div class="category-top">
+    <div class="category-top-container">
+      <h1><%= @category_title %></h1>
+      <button type="button" class="btn btn-primary add-submission">Submit a New Site</button>
+      <div class="category-desc">
+        <%= @category_description %>
+      </div>
+    </div>
+
+  </div>
+
+  <ul class="listings">
+    <% @listings.each do |listing| %>
+      <li>
+        <div class="listing-image-container">
+          <%= link_to image_tag(listing['image']), listing["url"], target: "_blank" %>
+        </div>
+
+        <div class="listing-review-container">
+          <h3><%= listing['name'] %></h3>
+
+          <div class="review-item">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              <span class="item-title">Pros: </span>
+              <%= listing['pros'] %>
+          </div>
+
+          <div class="review-item">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <span class="item-title">Cons: </span>
+            <%= listing['cons'] %>
+          </div>
+
+          <div class="review-item last">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <span class="item-title">Pricing: </span>
+            <%= listing['pricing'] %>
+          </div>
+        </div>
+        <%= link_to "Visit Now", listing['url'], target: "_blank", class:"btn btn-primary visit-now" %>
+
+      </li>
+    <% end %>
+  </ul>
+</div>
