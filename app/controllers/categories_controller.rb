@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   VALID_CATEGORIES = ["e-commerce", "portfolios", "mobile", "brick-and-mortar"]
 
   def show
-    redirect_to root_path unless VALID_CATEGORIES.include?(params["id"])
+    redirect_to root_path and return unless VALID_CATEGORIES.include?(params["id"])
     title_and_description
     @listings = Listing.send(params['id'].underscore)
     meta_tags
