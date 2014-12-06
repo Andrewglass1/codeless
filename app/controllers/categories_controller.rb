@@ -19,7 +19,7 @@ private
       @category_title = "Portfolios"
       @category_description = "Find the best ways to build a website for your portfolio.  Great for artists, designers, musicians, etc."
     when "mobile"
-      @category_title = "Mobile apps and websites"
+      @category_title = "Mobile apps & websites"
       @category_description = "Find the best ways to build a mobile app or website.  Great for iOS iPhone apps, Android apps and responsive websites."
     when "e-commerce"
       @category_title = "eCommerce"

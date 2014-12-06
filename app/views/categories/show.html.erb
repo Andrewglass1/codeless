@@ -44,7 +44,10 @@
             <%= listing['pricing'] %>
           </div>
         </div>
-        <%= link_to "Visit Now", listing['url'], target: "_blank", class:"btn btn-primary visit-now" %>
+
+        <div class="visit-now">
+          <%= link_to "Visit Now", listing['url'], target: "_blank", class:"btn btn-primary" %>
+        </div>
 
       </li>
     <% end %>
