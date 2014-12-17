@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  VALID_CATEGORIES = ["e-commerce", "portfolios", "mobile", "brick-and-mortar"]
+  VALID_CATEGORIES = ["e-commerce", "portfolios", "mobile", "brick-and-mortar", "blogs", "subscription_ecommerce"]
 
   def show
     redirect_to root_path and return unless VALID_CATEGORIES.include?(params["id"])
@@ -24,6 +24,13 @@ private
     when "e-commerce"
       @category_title = "eCommerce"
       @category_description = "Find the best ways to build a website for your eCommerce business.  Great for selling products via an online storefront."
+    when "blogs"
+      @category_title = "Blogs"
+      @category_description = "Find the best ways to build a blog.  Great for writers, bloggers and existing businesses looking to publish content on the web."
+    when "subscription_ecommerce"
+      @category_title = "Subscription eCommerce"
+      @category_description = "Find the best ways....."
+
     end
   end
 
