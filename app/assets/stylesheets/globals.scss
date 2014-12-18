@@ -16,3 +16,11 @@ $break-large: 980px;
     @media only screen and (min-width: $break-small) and (max-width: $break-large) { @content }
   }
 }
+
+@mixin vertical-center() {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
