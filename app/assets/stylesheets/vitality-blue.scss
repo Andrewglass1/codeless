@@ -1224,19 +1224,42 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-prev,body.v
 
 .demo-header {
   text-align: center;
-  background: url("bg-header.jpg") no-repeat center center scroll;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */
+    asset-url("_a1.jpeg") no-repeat center center scroll;
   color: #fff;
+  text-shadow: 0 0 2px #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   padding: 100px 0;
+
+  p.subheader {
+    font-size: 24px;
+    @include respond-to(smartphone) {
+      font-size: 16px;
+    }
+  }
 }
 
 .preview-pane {
   text-align: center;
   margin-bottom: 30px;
   padding: 15px;
+  transition: all 300ms ease;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 7px;
+
+    .linecon-lg {
+      color: #454545;
+    }
+  }
 }
 
 .preview-pane hr {
@@ -1264,4 +1287,16 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-prev,body.v
 
 .label-primary {
   background-color: #EF4035;
+}
+
+.linecon-lg {
+  font-size: 80px;
+  color: #aaa;
+  transition: color .3s ease;
+}
+
+.bottom-100 {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 100px;
 }

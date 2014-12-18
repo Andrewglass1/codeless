@@ -87,7 +87,7 @@
       }
 
       img  {
-        height: 140px;
+        width: 100%;
         @include respond-to(all_mobile) {
           height: auto;
           width: 100%;
@@ -129,6 +129,29 @@
           width: 100%;
           margin-right: 0;
         }
+      }
+    }
+  }
+
+  h3.categories {
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .recommendations {
+    border: 1px solid #ddd;
+    border-radius: 7px;
+
+    a {
+      text-transform: uppercase;
+      color: #454545;
+      text-align: center;
+      width: 16%;
+      padding: 20px 0;
+      border-right: 1px solid #ddd;
+      display: inline-block;
+      &:last-child {
+        border-right: 0;
       }
     }
   }
