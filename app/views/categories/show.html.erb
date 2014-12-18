@@ -25,28 +25,33 @@
 
         <div class="listing-review-container">
           <h3><%= listing['name'] %></h3>
+          <p><%= listing['pitch'] %></p>
+
+          <% if listing['pros'] %>
+            <div class="review-item">
+              <%= fa_icon "thumbs-o-up" %>
+              <span class="item-title">Pros: </span>
+              <%= listing['pros'].join(", ") %>
+            </div>
+          <% end %>
+
+
 
           <div class="review-item">
-            <%= fa_icon "thumbs-o-up" %>
-            <span class="item-title">Pros: </span>
-            <%= listing['pros'] %>
-          </div>
-
-          <div class="review-item">
-            <%= fa_icon "thumbs-o-down" %>
-            <span class="item-title">Cons: </span>
-            <%= listing['cons'] %>
-          </div>
-
-          <div class="review-item last">
             <%= fa_icon "dollar" %>
             <span class="item-title">Pricing: </span>
-            <%= listing['pricing'] %>
+            <%= listing['pricing'].join(", ") %>
           </div>
+
+          <% if listing['trial'] %>
+            <div class="review-item last">
+              <p><%= listing['trial'] %></p>
+            </div>
+          <% end %>
         </div>
 
         <div class="visit-now">
-          <%= link_to "Visit Now", listing['url'], target: "_blank", class:"btn btn-primary" %>
+          <%= link_to "Visit Now", listing['link'], target: "_blank", class:"btn btn-primary" %>
         </div>
 
       </li>

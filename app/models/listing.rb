@@ -1,92 +1,62 @@
 class Listing
 
   def self.e_commerce
-    [{'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'},
-    {'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'},
-    {'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'}
-      ]
+    [
+      {"bucket"=>"Ecommerce Website", "name"=>"Shopify", "link"=>"http://www.shopify.com", "pitch"=>"Shopify is everything you need to sell anywhere", "pros"=>["Unlimited products on all plans", "24/7 Support", "Sell online and instore", "Free Shopify Card Reader"], "trial"=>"14-day free trial", "pricing_link"=>"http://www.shopify.com/pricing", "pricing"=>["Plans range from $14-$179 per month", "2.25%-2.9% + $.30 Credit card fee per transaction"], "image"=>"http://upload.wikimedia.org/wikipedia/en/4/44/Shopify-bag-and-logotype.png", "affiliate_data"=>nil},
+      {"bucket"=>"Ecommerce Website", "name"=>"3dcart", "link"=>"http://www.3dcart.com/", "pitch"=>"The All-in-one eCommerce Solution", "pros"=>["SEO-friendly","Free Facebook store", "Free ad credits", "24/7 Support"], "trial"=>"15-day free trial", "pricing_link"=>"http://www.3dcart.com/pricing.htm", "pricing"=>["Plans range from $19.99-$129.99  per month", "No transaction fees", "Save 15% with annual pricing"], "image"=>"http://www.3dcart.com/images/logo.png", "affiliate_data"=>nil},
+      {"bucket"=>"Ecommerce Website", "name"=>"Volusion", "link"=>"http://www.volusion.com/", "pitch"=>"Open a successful online store today", "pros"=>["Create daily deals and coupons", "Sell on Amazon, Facebook and eBay", "24/7 Support", "Built-in SEO features"], "trial"=>"14-day free trial", "pricing_link"=>"http://www.volusion.com/hosting-plans-pricing", "pricing"=>["Plans range from $15-$135  per month", "No transaction fees", "Save 10% with annual pricing"], "image"=>"http://www.volusion.com/sites/all/themes/www_corona_1/logo.png", "affiliate_data"=>nil},
+      {"bucket"=>"Ecommerce Website", "name"=>"Fortune3", "link"=>"http://www.fortune3.com/", "pitch"=>"You All-in-one Ecommerce Software Solution", "pros"=>["Unlimited storage, bandwidth and emails with all plans", "24/7 Support", "Turnkey eCommerce solutions", "Mobile Friendly designs"], "trial"=>"30 day free trial", "pricing_link"=>"http://www.fortune3.com/#pricing", "pricing"=>["Plans range from $9.95-$159.99  per month", "No transaction fees when using fortune3 credit card services", "$0 Setup fee for most plans"], "image"=>"http://www.fortune3.com/en/images/newsitelogo.png", "affiliate_data"=>nil},
+      {"bucket"=>"Ecommerce Website", "name"=>"LemonStand", "link"=>"https://lemonstand.com/", "pitch"=>"The eCommerce Platform That's Built For Growth.", "pros"=>["Unlimited tech support", "Advanced SEO features", "Create coupon codes", "Accepts Bitcoin", "Scalable Hosting"], "trial"=>"14-day free trial", "pricing_link"=>"https://lemonstand.com/pricing", "pricing"=>["Plans range from $49-$399  per month", "No transaction fees"], "image"=>"https://lemonstand.com/resources/ls2-production-website/images/logo.svg", "affiliate_data"=>nil}
+    ]
 
   end
 
   def self.portfolios
-    [{'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'},
-    {'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'},
-    {'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'}
+    [
+      {"bucket"=>"Portfolio Website", "name"=>"Cargo Collective", "link"=>"http://cargocollective.com/", "pitch"=>"Cargo is a personal publishing platform aimed at creating accessible tools and a networked context to enhance the exposure of talented individuals on the Internet.", "pros"=>nil, "trial"=>"Free tier available", "pricing_link"=>"http://support.cargocollective.com/customer/portal/articles/724224-site-upgrades", "pricing"=>["$9 per month"], "image"=>"http://www.made-in-england.org/images/cargo-collective.gif", "affiliate_data"=>"no"},
+      {"bucket"=>"Portfolio Website", "name"=>"Voog", "link"=>"http://voog.com/", "pitch"=>"Voog is a mess-free platform that enables you to build awesome websites with a creative flow. ", "pros"=>nil, "trial"=>"30-day free trial", "pricing_link"=>"http://voog.com/pricing", "pricing"=>["Plans range from $8-$14 per month"], "image"=>"http://media.voog.com/0000/0000/0005/photos/voog-logo_large.png", "affiliate_data"=>"Doesn't look like it"},
+      {"bucket"=>"Portfolio Website", "name"=>"Spacecraft", "link"=>"www.spacecraft.com", "pitch"=>"Easily create and manage a beautifully effective website.", "pros"=>nil, "trial"=>"14-day free trial", "pricing_link"=>"https://gospacecraft.com/pricing", "pricing"=>["Plans range from $8-$49 per month"], "image"=>"https://175fbe350106892609a1-91355e68556f5592a619c88abdf761f7.ssl.cf2.rackcdn.com/b456c9af87934501b43c8c0bbf22ccf4.png", "affiliate_data"=>"yes: https://gospacecraft.com/about-us/partners"},
+      {"bucket"=>"Portfolio Website", "name"=>"Weebly", "link"=>"http://www.weebly.com/", "pitch"=>"Your idea needs a great website", "pros"=>nil, "trial"=>"Free tier available", "pricing_link"=>"http://www.weebly.com/#plans/compare", "pricing"=>["$4-$25 per month"], "image"=>"https://lh4.googleusercontent.com/-0OwddDT3XH4/AAAAAAAAAAI/AAAAAAAAAA0/Aosoyftj8BA/photo.jpg", "affiliate_data"=>"http://partnerwith.weebly.com/referrals.html"}
     ]
   end
 
 
   def self.mobile
-    [{'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'},
-    {'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'},
-    {'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'}
+    [
+      {"bucket"=>"Mobile App/Website", "name"=>"Como", "link"=>"http://www.como.com/", "pitch"=>"Creae your own mobile app for you business", "pros"=>nil, "trial"=>nil, "pricing_link"=>"http://www.como.com/pricing/", "pricing"=>["$33-$89 per month billed annually"], "image"=>"http://static-marketing.como.com/images/site/2014/06/como-logo-home.png", "affiliate_data"=>"http://www.como.com/affiliates/"},
+      {"bucket"=>"Mobile App/Website", "name"=>"Canvas", "link"=>"http://www.gocanvas.com/content/try-canvas1", "pitch"=>"Canvas enables any business to replace inefficient paper forms with customizable mobile apps. No IT or coding required.", "pros"=>nil, "trial"=>"30 day free trial", "pricing_link"=>"http://www.gocanvas.com/content/tour/pricing_options/", "pricing"=>["$4.95-$20 per user per month"], "image"=>"http://www.gocanvas.com/images/canvas-logo.png", "affiliate_data"=>"http://www.gocanvas.com/content/canvas-partner"},
+      {"bucket"=>"Mobile App/Website", "name"=>"Appy Pie", "link"=>"http://www.appypie.com/", "pitch"=>"Make an App. As Easy as Pie.", "pros"=>nil, "trial"=>nil, "pricing_link"=>"http://www.appypie.com/pricing-plan", "pricing"=>["$7-$40 per month"], "image"=>"http://www.appypie.com/wp-content/themes/profitbyapps/images/logo_new.png", "affiliate_data"=>"http://affiliate.appypie.com/"},
+      {"bucket"=>"Mobile App/Website", "name"=>"Mobile Roadie", "link"=>"http://mobileroadie.com/", "pitch"=>"App creation and mobile marketing in one powerful solution.", "pros"=>nil, "trial"=>"Free Trial available", "pricing_link"=>"http://mobileroadie.com/signup", "pricing"=>["$125-$667 per month"], "image"=>"http://mobileroadie.com/publicv2/images/header/logo@2x.png", "affiliate_data"=>"http://mobileroadie.com/affiliates"},
+      {"bucket"=>"Mobile App/Website", "name"=>"Game Salad", "link"=>"http://gamesalad.com/", "pitch"=>"Create mobile games for iOS and Android", "pros"=>nil, "trial"=>"Free Tier available", "pricing_link"=>"http://gamesalad.com/creator/pro#pricing", "pricing"=>["$299 per year"], "image"=>nil, "affiliate_data"=>"no"}
     ]
   end
 
   def self.brick_and_mortar
-    [{'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'},
-    {'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'},
-    {'image'   => 'ss_logo.jpg',
-      'name'    => 'Squarespace',
-      'pros'    => 'Here are some pros',
-      'cons'    => 'Here are some cons',
-      'pricing' => 'Here is some pricing',
-      'url'     => 'http://www.squarespace.com'}
+    [
+      {"bucket"=>"Brick and Mortar Store", "name"=>"Webs", "link"=>"http://www.webs.com/", "pitch"=>"Better Websites Made Simple", "pros"=>["Free custom domain name with paid plans", "Free themes with mobile friendly designs", "Unlimited pages", "Easy to use drag-and-drop interface"], "trial"=>"30 day money back guarantee", "pricing_link"=>"http://www.webs.com/plans", "pricing"=>["Free to use with 'webs' sub-domain", "Paid plans range from $5.99 to $22.99  per month"], "image"=>"http://static.websimages.com/v55734ac/active-static/target/external/images/brands/webs.png", "affiliate_data"=>nil},
+      {"bucket"=>"Brick and Mortar Store", "name"=>"Wix", "link"=>"http://www.wix.com/", "pitch"=>"Create Your Stunning Website. It's Free", "pros"=>["Purchase add-ons from the the Wix App Market", "Simple to use Drag n' Drop site builder", "Choose from hundreds of pre-built templates", "eCommerce capabilities"], "trial"=>"14 day trial on premium plans", "pricing_link"=>"http://www.wix.com/upgrade/website", "pricing"=>["Free to use with 'wix' sub-domain", "Paid plans range from $4.08 to $39.90 per month", "Save up to 40% with annual pricing"], "image"=>"http://static.parastorage.com/services/html-landing/hp/ny/images/1920/stage_1/wix_logo.png", "affiliate_data"=>nil},
+      {"bucket"=>"Brick and Mortar Store", "name"=>"Onepager", "link"=>"http://onepagerapp.com/", "pitch"=>"Build a beautiful simple website for your small business", "pros"=>["Perfect for simple sites for small businesses", "Ability to send newsletters", "Unlimited bandwidth", "Easily add forms to your website"], "trial"=>nil, "pricing_link"=>"http://onepagerapp.com/en/pricing", "pricing"=>["$10/month for one website", "Free to use without a custom domain", "Save up to 25% with annual pricing"], "image"=>"http://onepagerapp.com/assets/application/logo.png", "affiliate_data"=>"http://onepagerapp.com/en/company/partners"},
+      {"bucket"=>"Brick and Mortar Store", "name"=>"SnapPages", "link"=>"http://snappages.com/", "pitch"=>"Drag. Drop. Done. Website creation for the rest of us", "pros"=>["Easy to use drag-and-drop editor", "Easy to use blogging platform", "Choose from a portfolio of modern, mobile friendly designs"], "trial"=>"15 day free trial", "pricing_link"=>"http://snappages.com/pricing", "pricing"=>["Free to use with 'snappages' subdomain", "Plans range from $8 to $15 per month"], "image"=>"http://assets.snappages.com/main/images/snappages_logo.png", "affiliate_data"=>nil},
+      {"bucket"=>"Brick and Mortar Store", "name"=>"Buildicus", "link"=>"https://buildicus.com/", "pitch"=>"you can build it. no coding. no design experience. no problem.", "pros"=>["Easy to use drag-and-drop editor", "Mobile friendly layouts", "Conceirge service will build your website for you"], "trial"=>nil, "pricing_link"=>"https://buildicus.com/pricing", "pricing"=>["$19 a month"], "image"=>"https://buildicus.com/wp-content/themes/buildicus/images/buildicus-logo.png", "affiliate_data"=>nil}
+    ]
+  end
+
+  def self.blogs
+    [
+      {"bucket"=>"Blog", "name"=>"Wordpress", "link"=>"https://wordpress.com/website/", "pitch"=>"Powerful. Reliable. Simple.", "pros"=>nil, "trial"=>"Free Tier available", "pricing_link"=>"https://wordpress.com/website/", "pricing"=>["$99-$299 per year"], "image"=>"https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png", "affiliate_data"=>nil},
+      {"bucket"=>"Blog", "name"=>"Ghost", "link"=>"https://ghost.org/", "pitch"=>"Just a blogging platform: Ghost is a simple, powerful publishing platform that allows you to share your stories with the world.", "pros"=>nil, "trial"=>"Ghost(Pro) free for 14 days", "pricing_link"=>"https://ghost.org/pricing/", "pricing"=>["Plans range from $10-$250"], "image"=>"http://www.webdesignerhub.com/wp-content/uploads/ghost-logo.jpg", "affiliate_data"=>nil},
+      {"bucket"=>"Blog", "name"=>"TypePad", "link"=>"http://www.typepad.com/", "pitch"=>"Share your passions with the world. Used by the world's best bloggers in crafts, food, style and more", "pros"=>["Unbeatable customer support", "Fully customizable", "Tons of themes to pick from"], "trial"=>"14 Day free Trial", "pricing_link"=>"http://www.typepad.com/pricing", "pricing"=>["Plans range from $8.95-$49.95"], "image"=>"http://www.fomola.com/blog/wp-content/uploads/2012/01/typepad-logo.png", "affiliate_data"=>nil},
+      {"bucket"=>"Blog", "name"=>"Svbtle", "link"=>"https://svbtle.com/", "pitch"=>"A blogging platform designed to help you think.", "pros"=>["Minimalistic", "Inexpensive", "Easy to use dashboard"], "trial"=>"14 day free trial", "pricing_link"=>"https://svbtle.com/signup", "pricing"=>["$6 per month"], "image"=>"https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/home_head-f015d801d50e5f0a8c0110afb6571820.png", "affiliate_data"=>nil},
+      {"bucket"=>"Blog", "name"=>"Medium", "link"=>"https://medium.com/", "pitch"=>"No gratuitous sidebars, plug-ins, or widgets. There is nothing to set up or customize. Simple and clean blogging\n", "pros"=>["Simple and clean", "Free to use", "Importing of old posts"], "trial"=>nil, "pricing_link"=>nil, "pricing"=>["Free"], "image"=>"http://morganlinton.zippykid.netdna-cdn.com/wp-content/uploads/2014/02/Medium-Logo.jpg", "affiliate_data"=>nil}
+    ]
+  end
+
+  def self.subscription_ecommerce
+    [
+      {"bucket"=>"E-commerce (subscription)", "name"=>"CrateJoy", "link"=>"http://cratejoy.com/", "pitch"=>"Powerful all-in-one subscription business platform", "pros"=>["No subscriber limits", "Easy to customize billing schedules", "Your customers can upgrade subscriptions", "Slick subscription fulfillment management dashboard"], "trial"=>"14 day free trial", "pricing_link"=>"http://cratejoy.com/pricing/", "pricing"=>["$29/month", "$.10 per transaction plus 1.25% of total spent"], "image"=>"http://3diztj3ws2bq2fgzgspcdqhz.wpengine.netdna-cdn.com/wp-content/themes/cratejoy/assets/images/logo_cratejoy.svg", "affiliate_data"=>nil},
+      {"bucket"=>"E-commerce (subscription)", "name"=>"Subbly", "link"=>"http://www.subbly.co/", "pitch"=>"The easy way to start a subscription business website", "pros"=>["Receive payments in 7 days", "Subcriber limits on all plans", "Simple order management"], "trial"=>"14 day free trial", "pricing_link"=>"http://www.subbly.co/#pricing", "pricing"=>["Plans range from $24 - $199 per month", "No transaction fees"], "image"=>"http://www.subbly.co/assets/images/subbly_logo_white.svg", "affiliate_data"=>nil},
+      {"bucket"=>"E-commerce (subscription)", "name"=>"Sprigos", "link"=>"http://sprigos.com/", "pitch"=>"Add Subscriptions to Your Site in 146 Seconds", "pros"=>["Create a stand-alone site or add Sprigos to your current website", "Great for subscription boxes, online subscriptions or service subscriptions", "Automated deposits in as quick as 2 days"], "trial"=>nil, "pricing_link"=>"https://sprigos.com/plans", "pricing"=>["Plans range from $19 - $99 per month", "Cost per subscription range from $.95 - $2.35"], "image"=>"https://sprigos.com/assets/sprigos_logo2-dd0ac4f3e0599a997f05e90458e99ae9.svg", "affiliate_data"=>nil},
+      {"bucket"=>"E-commerce (subscription)", "name"=>"Wild Apricot", "link"=>"http://www.wildapricot.com/", "pitch"=>"STOP doing all those tasks manually Let us be your membership management workhorse", "pros"=>["Perfect for clubs, small associations and non-profits", "Automate membership applications and renewals", "Event registrations with payments"], "trial"=>"30 Day free trial", "pricing_link"=>"http://www.wildapricot.com/pricing", "pricing"=>["Free ad-supported plan available", "Paid plans range from $25 - $200 per month", "Save 10% with annual pricing"], "image"=>"http://s.wildapricot.net/StaticImages/v2.17.0.20141118130745/Controls/Logo/Header/default.png", "affiliate_data"=>nil}
     ]
   end
 end
